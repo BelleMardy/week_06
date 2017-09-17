@@ -1,12 +1,13 @@
 from kivy.app import App
 from kivy.lang import Builder
 
+
 MILES_TO_KM = 1.61
 
 class MilesConverterApp(App):
     def build(self):
         self.title = "Convert Miles to Kilometres"
-        self.root = Builder.load_file('convert_miles_to_km.kv')
+        self.root = Builder.load_file('convert_miles_to_km_colour.kv')
         return self.root
 
     def handle_calculate(self):
